@@ -30,9 +30,26 @@ let person = {
 }
 console.log(person);
 //(ii)Arrays(used to store a list)
-let selectedMeals = ['Pilau','Githeri','Beaf','Ugali'];
+let selectedMeals = ['Pilau','Githeri','Beaf','Ugali'];//Example using strings
 console.log(selectedMeals);
+//Example using numbers
+let selectedHeights = [5.6,5.9,6];
+console.log(selectedHeights);
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
-// To access an element in an array we use their index as indicated in the below example
-
+// To access an element in an array we use their index 
+//(iii)Fuctions(theyre set of statements that performs a task or calculate a value)
+function greet(name){//fuction declaration(with a singel parameter)(To perform a task)
+console.log ('Hello' + name)
+}
+greet('Ben');
+//Fuction declaration with multiple parameters
+function greet (name,lastName,school) {
+    console.log ('Hello'+ name + '' +lastName + school);
+}
+greet('Ben','Mwangi','Moringa')
+//use of fuction in calculating a value
+function square (number){
+    return number * number;
+}
+console.log(square(2));
 
