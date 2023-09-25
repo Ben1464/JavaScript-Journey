@@ -1,20 +1,21 @@
 //Myfirst javascript code
 console.log ("Hello world");//To print Hello world
 //javascript Variables(for variables that can have their values changing)
-let name="Ben"
+let name ="Ben"
 console.log(name);
 //declaring the two names
-let firstName="Ben";
-let lastName="Mwangi";
-console.log(firstName,lastName);
+let firstName="Benson";
+let secondName="Mwangi";
+let lastName="Kimani"
+console.log(firstName,secondName,lastName);
 //Constants (if you dont want the variable to change)
 const interestRate=12;
 console.log(interestRate);
 //(1)Premitive values data types
 let city="Kerugoya" //(i)String
-let weight = 71; //(ii)Number-Integer
-let height= 5.8;//(iii)Number-Floating points
-console.log(city,weight,height);
+let postalCode = 71; //(ii)Number-Integer
+let streatNumber= 5.8;//(iii)Number-Floating points
+console.log(city,postalCode,streatNumber);
 let isApproved=true;//(iv)Boolean(Can have either true or false as the value)
 console.log(isApproved);
 //(2)Reference data types
@@ -29,9 +30,21 @@ let person = {
     city:"Kerugoya"
 }
 console.log(person);
+
+let school= {
+    name:"Moringa School",
+    programs:"FullStack,DevOps,CyberSecurity,UX/UI",
+    durationinmonths:8,
+    programingLanguages:"Html,Css,JavaScript,React,Python"
+}
+console.log(school);
+
+
 //(ii)Arrays(used to store a list)
 let selectedMeals = ['Pilau','Githeri','Beaf','Ugali'];//Example using strings
 console.log(selectedMeals);
+let moringaCourses = ['Fullstack','DevOps','Cybersecurity','UX/UI'];
+console.log(moringaCourses);
 //Example using numbers
 let selectedHeights = [5.6,5.9,6];
 console.log(selectedHeights);
