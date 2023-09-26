@@ -77,4 +77,30 @@ function max(a,b) {
     return a > b ? a:b;
 }
 console.log(max(10,20,));
+//JavaScript Conditions(Used to execute a block of code if a specified condition evaluates to `true`)
+let temperature = 25;
+if(temperature<0){
+    console.log("its freezing outside!");
+} else if (temperature<20){
+    console.log("Its cool outside.");
+} else{
+    console.log("Its warm outside,");
+}
+//Example 2
+let age = 34;
+if(age<20){
+    console.log("Youth");
+}
+else if(age>25){
+    console.log("You are old now!")
+}
+else{
+    console.log("Generation Z")
+}
+//Example 3 Using shorthand
+let height= 5.8
+let message = height < 4 ? "You are short":
+              height > 5.5 ? "You are tall":
+              "You are a bit taller";
+console.log(message);
 
