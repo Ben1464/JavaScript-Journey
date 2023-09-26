@@ -78,6 +78,12 @@ function max(a,b) {
 }
 console.log(max(10,20,));
 //JavaScript Conditions(Used to execute a block of code if a specified condition evaluates to `true`)
+//Example 0
+let mass =40;
+if (mass<50){
+    console.log("You are underweight");
+}
+//Example 1
 let temperature = 25;
 if(temperature<0){
     console.log("its freezing outside!");
