@@ -78,12 +78,20 @@ function max(a,b) {
 }
 console.log(max(10,20,));
 //JavaScript Conditions(Used to execute a block of code if a specified condition evaluates to `true`)
+//Example 0
+let mass =40;
+if (mass<50){
+    console.log("You are underweight");
+}
+//Example 1
 let temperature = 25;
 if(temperature<0){
     console.log("its freezing outside!");
-} else if (temperature<20){
+} 
+else if (temperature<20){
     console.log("Its cool outside.");
-} else{
+} 
+else{
     console.log("Its warm outside,");
 }
 //Example 2
@@ -103,4 +111,24 @@ let message = height < 4 ? "You are short":
               height > 5.5 ? "You are tall":
               "You are a bit taller";
 console.log(message);
+//Multiplication
+let num1=31;
+let num2=2;
+let multiply= num1*num2;
+console.log(multiply);
+// Math.random
+let random = (1,100);
+function getRandomInt(min,max){
+    return Math.floor(Math.random() * (max-min+1)) + min;
+}
+let randomInt=getRandomInt(1,100);
+console.log(randomInt);
+// Remainder
+let num3 =22;
+let num4 =6;
+let mod = num3%num4;
+console.log (mod);
+//Max
+let max=20;
+console.log(Math.max(2,3,15,20));
 
