@@ -137,3 +137,15 @@ console.log(message);
 //arrow function
 const area = (length,width) =>length*width;
 console.log(area(4,8))
+//Example 1
+function myFunction(p1,p2){
+    return p1*p2;
+}
+let result = myFunction (4,3);
+console.log(result);
+//example 2
+function fuelConsumption(kms,price){
+    return kms*price;
+}
+let consumption = fuelConsumption(23,211);
+console.log(consumption);
