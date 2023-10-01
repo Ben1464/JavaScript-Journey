@@ -111,6 +111,17 @@ let message = height < 4 ? "You are short":
               height > 5.5 ? "You are tall":
               "You are a bit taller";
 console.log(message);
+//Example 4
+let hour = 8;
+if (hour >=6 && hour <10){
+    console.log('Good morning');
+}
+else if(hour>= 12 && hour<18){
+    console.log('Good afternoon')
+}
+else{
+    console.log('Good evening');
+}
 //Multiplication
 //let num1=31;
 //let num2=2;
@@ -135,6 +146,8 @@ console.log(message);
 //traditional fuction
 
 //arrow function
+let volume=(length,width,height)=>length*width*height;
+console.log(volume(4,2,6));
 const area = (length,width) =>length*width;
 console.log(area(4,8))
 //Example 1
@@ -158,5 +171,8 @@ let kenyan = `I live in ${country} with a total of ${counties} counties with ${t
 console.log(kenyan);
 // Comparison in JavaScript
 // Strict operators
-//===
+//strict equality ===
 3===3
+//strict ineqyality !==
+3!=="3"
+
