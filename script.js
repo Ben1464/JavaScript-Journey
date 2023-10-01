@@ -149,3 +149,14 @@ function fuelConsumption(kms,price){
 }
 let consumption = fuelConsumption(23,211);
 console.log(consumption);
+//string interpolation
+//Example1
+let country = "kenya";
+let counties = 47;
+let tribes = 82;
+let kenyan = `I live in ${country} with a total of ${counties} counties with ${tribes} local tribes`;
+console.log(kenyan);
+// Comparison in JavaScript
+// Strict operators
+//===
+3===3
