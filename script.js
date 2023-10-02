@@ -122,6 +122,40 @@ else if(hour>= 12 && hour<18){
 else{
     console.log('Good evening');
 }
+
+//switch and case statements(used when comparing one variable to a bunch of values)
+//Example 1
+const favouriteAnimal = "lizards";
+switch (favouriteAnimal){
+    case "cat":
+    console.log('cats are great')
+    break
+    case "dog":
+        console.log('dogs are good companion')
+        break
+    case "shark":
+        console.log('sharks are dagerous') 
+        break   
+default:
+    console.log('I have never heard of such an animal')
+}
+//Example 2
+const mostCompetitiveTeam = 'Arsenal';
+switch (mostCompetitiveTeam){
+    case "Manchester city":
+    console.log("the greatest")
+    case "Arsenal":
+    console.log('the gunners')
+    break
+    case "Chelsea":
+        console.log('the blues')
+        break
+    case "Manchester united":    
+    console.log('the red devils')
+    break
+    default:
+    console.log('the rest are not among the big 4')
+}
 //Multiplication
 //let num1=31;
 //let num2=2;
