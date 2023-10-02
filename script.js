@@ -32,7 +32,7 @@ let person = {
     city: "Kerugoya"
 }
 console.log(person);
-
+//Example 2
 let school = {
     name: "Moringa School",
     programs: "FullStack,DevOps,CyberSecurity,UX/UI",
@@ -40,13 +40,20 @@ let school = {
     programingLanguages: "Html,Css,JavaScript,React,Python"
 }
 console.log(school);
+//Example 3
+let company ={
+    name:"Greenlife",
+    industry: "Agriculture",
+    popularProducts:['Greencop','Ranger','Optimizer']
+}
+console.log(company);
 
 
 //(ii)Arrays(used to store a list)
 let selectedMeals = ['Pilau', 'Githeri', 'Beaf', 'Ugali'];//Example using strings
 console.log(selectedMeals);
 let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI'];
-console.log(moringaCourses);
+console.log(moringaCourses[1]);
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
@@ -105,8 +112,20 @@ else if(age>25){
 else{
     console.log("Generation Z")
 }
+//trial
+let distance = 1400;
+if(distance<140){
+    console.log('One can use a motobike')
+}
+else if (distance<=140){
+    console.log('one will have to use a vehicle')
+}
+else {
+
+    console.log('you will have to use an aeroplane')
+}
 //Example 3 Using shorthand
-let height= 5.8
+let height= 5.8;
 let message = height < 4 ? "You are short":
               height > 5.5 ? "You are tall":
               "You are a bit taller";
@@ -125,7 +144,7 @@ else{
 
 //switch and case statements(used when comparing one variable to a bunch of values)
 //Example 1
-const favouriteAnimal = "lizards";
+const favouriteAnimal = "shark";
 switch (favouriteAnimal){
     case "cat":
     console.log('cats are great')
@@ -140,10 +159,11 @@ default:
     console.log('I have never heard of such an animal')
 }
 //Example 2
-const mostCompetitiveTeam = 'Arsenal';
+let mostCompetitiveTeam = 'Chelsea';
 switch (mostCompetitiveTeam){
     case "Manchester city":
     console.log("the greatest")
+    break
     case "Arsenal":
     console.log('the gunners')
     break
@@ -201,7 +221,7 @@ console.log(consumption);
 let country = "kenya";
 let counties = 47;
 let tribes = 82;
-let kenyan = `I live in ${country} with a total of ${counties} counties with ${tribes} local tribes`;
+let kenyan = `I live in ${country} with a total of ${counties} counties that have a total of ${tribes} local tribes`;
 console.log(kenyan);
 // Comparison in JavaScript
 // Strict operators
