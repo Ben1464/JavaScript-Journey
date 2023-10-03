@@ -51,13 +51,24 @@ console.log(company);
 
 //(ii)Arrays(used to store a list)
 let selectedMeals = ['Pilau', 'Githeri', 'Beaf', 'Ugali'];//Example using strings
+selectedMeals[2] = "Chapatis";
 console.log(selectedMeals);
 let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI'];
+moringaCourses . length; //To know the lenght of an array
 console.log(moringaCourses[1]);
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
 // To access an element in an array we use their index 
+// Adding items to an array
+let selectedJobs= ['Nurses','Mechanics','Accountants','Agronomist'];
+selectedJobs.push('Tailor');// Using(.push) to add an element
+selectedJobs.unshift('Security','Engineering');//using(.unshift) to add elements to the array
+console.log(selectedJobs);
+// Creating a copy of an array
+const registeredCompanies =['Apple','Microsoft','Windows'];
+const copyOfRegisteredCompanies =[...registeredCompanies ];
+console.log(registeredCompanies);
 
 //(iii)Fuctions(theyre set of statements that performs a task or calculate a value)
 function greet(name) {//fuction declaration(with a singel parameter)(To perform a task)
