@@ -47,15 +47,69 @@ let company ={
     popularProducts:['Greencop','Ranger','Optimizer']
 }
 console.log(company);
+//Example 4 
+// representing objects in a table format
+const family = {
+    mother: {
+        firstName: "Susan",
+        lastName: "Doyle",
+        age: 32
+    },
+    father: {
+        firstName: "John",
+        lastName: "Doyle",
+        age: 33
+    },
+    daughter: {
+        firstName: "Lily",
+        lastName: "Doyle",
+        age: 5
+    },
+    son: {
+        firstName: "Mike",
+        lastName: "Doyle",
+        age: 8
+    }
+}
+console.table(family); 
+//Example 6
+const employeesDetails={
+    Benny:
+{
+        Experience:6,
+        Department:'sales',
+        Returns:2000000
+        
+},
+    Moses:
+    {
+        Experience:2,
+        Department:'Marketing',
+        Returns:1000000
 
 
-//(ii)Arrays(used to store a list)
+    },
+    Rose:
+    {
+        Experience:2,
+        Department:'Collections',
+        Returns:3000000
+
+    }
+
+
+}
+console.table(employeesDetails);
+//Arrays
 let selectedMeals = ['Pilau', 'Githeri', 'Beaf', 'Ugali'];//Example using strings
 selectedMeals[2] = "Chapatis";
+selectedMeals.pop();// To remove the last element of the array.
+selectedMeals.shift();// To remove the first elemet of the array
 console.log(selectedMeals);
 let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI'];
 moringaCourses . length; //To know the lenght of an array
-console.log(moringaCourses[1]);
+moringaCourses .slice(0,1);
+console.log(moringaCourses[2]);
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
