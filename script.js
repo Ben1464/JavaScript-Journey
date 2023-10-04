@@ -294,4 +294,15 @@ console.log(kenyan);
 3===3
 //strict ineqyality !==
 3!=="3"
+//Loops(loops repeat an action a number of times)
+//Example 1 (For loop)
+for (let i=0; i<5; i++){
+    console.log("This should be repeated 5 times!",i);
+}
+//Example 2 (while loop)
+let i=1;//initialization
+while (i<=5){
+    console.log("This also should be repeated 5 times!",i);
+    i++;
+}
 
