@@ -32,7 +32,7 @@ let person = {
     city: "Kerugoya"
 }
 console.log(person);
-
+//Example 2
 let school = {
     name: "Moringa School",
     programs: "FullStack,DevOps,CyberSecurity,UX/UI",
@@ -40,17 +40,89 @@ let school = {
     programingLanguages: "Html,Css,JavaScript,React,Python"
 }
 console.log(school);
+//Example 3
+let company ={
+    name:"Greenlife",
+    industry: "Agriculture",
+    popularProducts:['Greencop','Ranger','Optimizer']
+}
+console.log(company);
+//Example 4 
+// representing objects in a table format
+const family = {
+    mother: {
+        firstName: "Susan",
+        lastName: "Doyle",
+        age: 32
+    },
+    father: {
+        firstName: "John",
+        lastName: "Doyle",
+        age: 33
+    },
+    daughter: {
+        firstName: "Lily",
+        lastName: "Doyle",
+        age: 5
+    },
+    son: {
+        firstName: "Mike",
+        lastName: "Doyle",
+        age: 8
+    }
+}
+console.table(family); 
+//Example 6
+const employeesDetails={
+    Benny:
+{
+        Experience:6,
+        Department:'sales',
+        Returns:2000000
+        
+},
+    Moses:
+    {
+        Experience:2,
+        Department:'Marketing',
+        Returns:1000000
 
 
-//(ii)Arrays(used to store a list)
+    },
+    Rose:
+    {
+        Experience:2,
+        Department:'Collections',
+        Returns:3000000
+
+    }
+
+
+}
+console.table(employeesDetails);
+//Arrays
 let selectedMeals = ['Pilau', 'Githeri', 'Beaf', 'Ugali'];//Example using strings
+selectedMeals[2] = "Chapatis";
+selectedMeals.pop();// To remove the last element of the array.
+selectedMeals.shift();// To remove the first elemet of the array
 console.log(selectedMeals);
 let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI'];
-console.log(moringaCourses);
+moringaCourses . length; //To know the lenght of an array
+moringaCourses .slice(0,1);
+console.log(moringaCourses[2]);
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
 // To access an element in an array we use their index 
+// Adding items to an array
+let selectedJobs= ['Nurses','Mechanics','Accountants','Agronomist'];
+selectedJobs.push('Tailor');// Using(.push) to add an element
+selectedJobs.unshift('Security','Engineering');//using(.unshift) to add elements to the array
+console.log(selectedJobs);
+// Creating a copy of an array
+const registeredCompanies =['Apple','Microsoft','Windows'];
+const copyOfRegisteredCompanies =[...registeredCompanies ];
+console.log(registeredCompanies);
 
 //(iii)Fuctions(theyre set of statements that performs a task or calculate a value)
 function greet(name) {//fuction declaration(with a singel parameter)(To perform a task)
@@ -105,12 +177,70 @@ else if(age>25){
 else{
     console.log("Generation Z")
 }
+//trial
+let distance = 1400;
+if(distance<140){
+    console.log('One can use a motobike')
+}
+else if (distance<=140){
+    console.log('one will have to use a vehicle')
+}
+else {
+
+    console.log('you will have to use an aeroplane')
+}
 //Example 3 Using shorthand
-let height= 5.8
+let height= 5.8;
 let message = height < 4 ? "You are short":
               height > 5.5 ? "You are tall":
               "You are a bit taller";
 console.log(message);
+//Example 4
+let hour = 8;
+if (hour >=6 && hour <10){
+    console.log('Good morning');
+}
+else if(hour>= 12 && hour<18){
+    console.log('Good afternoon')
+}
+else{
+    console.log('Good evening');
+}
+
+//switch and case statements(used when comparing one variable to a bunch of values)
+//Example 1
+const favouriteAnimal = "shark";
+switch (favouriteAnimal){
+    case "cat":
+    console.log('cats are great')
+    break
+    case "dog":
+        console.log('dogs are good companion')
+        break
+    case "shark":
+        console.log('sharks are dagerous') 
+        break   
+default:
+    console.log('I have never heard of such an animal')
+}
+//Example 2
+let mostCompetitiveTeam = 'Chelsea';
+switch (mostCompetitiveTeam){
+    case "Manchester city":
+    console.log("the greatest")
+    break
+    case "Arsenal":
+    console.log('the gunners')
+    break
+    case "Chelsea":
+        console.log('the blues')
+        break
+    case "Manchester united":    
+    console.log('the red devils')
+    break
+    default:
+    console.log('the rest are not among the big 4')
+}
 //Multiplication
 //let num1=31;
 //let num2=2;
@@ -135,5 +265,33 @@ console.log(message);
 //traditional fuction
 
 //arrow function
+let volume=(length,width,height)=>length*width*height;
+console.log(volume(4,2,6));
 const area = (length,width) =>length*width;
 console.log(area(4,8))
+//Example 1
+function myFunction(p1,p2){
+    return p1*p2;
+}
+let result = myFunction (4,3);
+console.log(result);
+//example 2
+function fuelConsumption(kms,price){
+    return kms*price;
+}
+let consumption = fuelConsumption(23,211);
+console.log(consumption);
+//string interpolation
+//Example1
+let country = "kenya";
+let counties = 47;
+let tribes = 82;
+let kenyan = `I live in ${country} with a total of ${counties} counties that have a total of ${tribes} local tribes`;
+console.log(kenyan);
+// Comparison in JavaScript
+// Strict operators
+//strict equality ===
+3===3
+//strict ineqyality !==
+3!=="3"
+
