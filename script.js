@@ -129,6 +129,11 @@ function greet(name) {//fuction declaration(with a singel parameter)(To perform 
     console.log('Hello' + name)
 }
 greet('Ben');
+//Declaring a function with expression
+const studentDetails= function studentDetails(name,age,sex) {
+    console.log('Hello' + name+''+ age+''+sex);
+}
+studentDetails('Robert',25,'male');
 //Fuction declaration with multiple parameters
 function greet(name, lastName, school) {
     console.log('Hello' + name + '' + lastName + school);
