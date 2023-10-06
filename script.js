@@ -191,6 +191,23 @@ function outer(){
      }
      outer();
 }
+//Function scope
+//Rule 1:Variables defined inside a fuction cannot be accessed anywhere outside that fuction.
+function numbersAvailable(){
+    let a =10;
+    const b =20;
+    var c = 30;
+    console.log(a,b,c);
+}
+numbersAvailable();
+//Rule 2: A fuction can access all variables defined inside the scope it is defined in.
+let c =40;
+    const d =50;
+    var e = 60;
+    function numbersAvailableIn(){
+    }
+    console.log(c,d,e);
+    numbersAvailableIn();
 //JavaScript Conditions(Used to execute a block of code if a specified condition evaluates to `true`)
 //Example 0
 let mass =40;
