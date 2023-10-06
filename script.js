@@ -130,15 +130,43 @@ function greet(name) {//fuction declaration(with a singel parameter)(To perform 
 }
 greet('Ben');
 //Declaring a function with expression
-const studentDetails= function studentDetails(name,age,sex) {
+const studentDetails = function studentDetails(name,age,sex) {
     console.log('Hello' + name+''+ age+''+sex);
 }
 studentDetails('Robert',25,'male');
-//Fuction declaration with multiple parameters
-function greet(name, lastName, school) {
-    console.log('Hello' + name + '' + lastName + school);
+//Rest Parameters(allows a function to accept any number of parameters)
+//A fuction can only accept only one rest parameter and it should be the last parameter"
+function collectThings(x,...y){
+console.log(x);
+console.log(...y)
 }
-greet('Ben', 'Mwangi', 'Moringa')
+collectThings(1,2,3,4,5,6,7,8,9,10);
+//Arrow function
+//Example 0
+const add =function(a,b){
+    return a*b;
+}
+add (2,5);
+//(Above example can be writen as below)
+const multiply = (a,b) => a*b;
+console.log(add(2,5));
+//More examples
+let volume=(length,width,height)=>length*width*height;
+console.log(volume(4,2,6));
+const area = (length,width) =>length*width;
+console.log(area(4,8))
+//Example 1
+function myFunction(p1,p2){
+    return p1*p2;
+}
+let result = myFunction (4,3);
+console.log(result);
+//example 2
+function fuelConsumption(kms,price){
+    return kms*price;
+}
+let consumption = fuelConsumption(23,211);
+console.log(consumption);
 //use of fuction in calculating a value
 function square(number) {
     return number * number;
@@ -154,6 +182,15 @@ function max(a,b) {
     return a > b ? a:b;
 }
 console.log(max(10,20,));
+//Nested functions(closure=Nested functions & fuctions scope)
+function outer(){
+    console.log(outer);
+     function inner(){
+   console.log(inner);
+   inner();
+     }
+     outer();
+}
 //JavaScript Conditions(Used to execute a block of code if a specified condition evaluates to `true`)
 //Example 0
 let mass =40;
@@ -269,23 +306,7 @@ switch (mostCompetitiveTeam){
 
 //traditional fuction
 
-//arrow function
-let volume=(length,width,height)=>length*width*height;
-console.log(volume(4,2,6));
-const area = (length,width) =>length*width;
-console.log(area(4,8))
-//Example 1
-function myFunction(p1,p2){
-    return p1*p2;
-}
-let result = myFunction (4,3);
-console.log(result);
-//example 2
-function fuelConsumption(kms,price){
-    return kms*price;
-}
-let consumption = fuelConsumption(23,211);
-console.log(consumption);
+
 //string interpolation
 //Example1
 let country = "kenya";
