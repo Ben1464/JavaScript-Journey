@@ -107,11 +107,13 @@ selectedMeals.pop();// To remove the last element of the array.
 selectedMeals.shift();// To remove the first elemet of the array
 console.log(selectedMeals);
 let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI'];
-moringaCourses . length; //To know the lenght of an array
-moringaCourses .slice(0,1);
-console.log(moringaCourses[2]);
+console.log(moringaCourses.slice(0,2));
+console.log(moringaCourses[2]);//To select a particular array
+console.log(moringaCourses.length);//To know the lenght of an array
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
+//Mapping an array
+
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
 // To access an element in an array we use their index 
 // Adding items to an array
