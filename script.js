@@ -230,6 +230,25 @@ function sayGreetings(name){
     return `Hello ${name}`;
 }
 sayGreetings('Joshua');
+//IIFE(Imedieyly invoked function expression(Execute a fuction imedietly its invoked ))
+(function(){
+    console.log('IIFE');
+})();
+//Recursion(reffers to a function that calls its self.(Every recursion must have base condition))
+const zoo = function buz(){
+    buz();
+}
+//Example 1 with base condition
+function fetchWater(count){
+if(count===0){
+    console.log("No more water left");
+    return;
+}
+console.log("fetching water...");
+fetchWater(count-1);
+}
+fetchWater(5);
+
 //JavaScript Conditions(Used to execute a block of code if a specified condition evaluates to `true`)
 //Example 0
 let mass =40;
