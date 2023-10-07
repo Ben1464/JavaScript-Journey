@@ -208,6 +208,28 @@ let c =40;
     }
     console.log(c,d,e);
     numbersAvailableIn();
+    //Callback functions(involves fuctions using another fuction as a parameter or as an urgument)
+    //Example 1(Using a fuction as a parameter)
+    function foo(bar){
+        bar();
+    }
+    foo(function(){//Anonymous fuction.
+        console.log('bar');
+    });
+//Higher Order Function.
+//HOF is a fuction that takes one or more fuctions as urguments and returns a fuction as a value for it.
+//Example 1
+function getCapture(camera){
+    camera();
+}
+getCapture(function(){ //Anonymous function
+    console.log('camera is on');
+});
+// Pure fuctions(Its a function that produces same output for the same input)
+function sayGreetings(name){
+    return `Hello ${name}`;
+}
+sayGreetings('Joshua');
 //JavaScript Conditions(Used to execute a block of code if a specified condition evaluates to `true`)
 //Example 0
 let mass =40;
