@@ -144,6 +144,24 @@ const books =[
 ];
 const findBookByTitle = title => books.find(book=> book.title === title);
 console.log(findBookByTitle('The Unplugged Alpha'));
+//.Reduce() is used to apply a function aganist an accumulator and each element in an array to reduce it to a single value
+//Exampler 1 ( to concatenate an an array of string into a single string)
+const words = ["Hello","Kenya","We here now","!"];
+const sentence = words.reduce((accumulator,currentWord) => accumulator + ""+ currentWord, "");
+console.log(sentence.trim());
+//Example 2(to count occurence of each fruit in an array)
+const fruits = ['apple','banana','apple','orange','banana','mango'];
+const countFruits = fruits.reduce((accumulator,currentFruit)=>{
+    accumulator[currentFruit] = (accumulator[currentFruit] || 0) + 1;
+    return accumulator;
+},{});
+console.log(countFruits);
+//.forEach(it does something for each item in an array without producing a new array or a specified output)
+//Example 1
+const players = ['Job','Alan','Bob'];
+players.forEach(player => {
+    console.log(`Hello, ${player}!`);
+});
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
 // To access an element in an array we use their index 
 // Adding items to an array
