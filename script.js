@@ -106,6 +106,8 @@ selectedMeals[2] = "Chapatis";
 selectedMeals.pop();// To remove the last element of the array.
 selectedMeals.shift();// To remove the first elemet of the array
 console.log(selectedMeals);
+// Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
+// To access an element in an array we use their index 
 let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI','Data science'];
 console.log(moringaCourses.slice(0,3));//Used to retarn a shallow copy of the array
 console.log(moringaCourses[2]);//To select a particular array
@@ -156,14 +158,21 @@ const countFruits = fruits.reduce((accumulator,currentFruit)=>{
     return accumulator;
 },{});
 console.log(countFruits);
-//.forEach(it does something for each item in an array without producing a new array or a specified output)
+//.forEach()(it does something for each item in an array without producing a new array or a specified output)
 //Example 1
 const players = ['Job','Alan','Bob'];
 players.forEach(player => {
     console.log(`Hello, ${player}!`);
 });
-// Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
-// To access an element in an array we use their index 
+//.Filter()(is used to create another array with elements that passs a specified test(provided as a function))
+//Example 1 (filtering empty strings in an array)
+const strings  = ['Hello','','Man','','True'];
+const nonEmptyString =strings.filter(str => str !== "");
+console.log(nonEmptyString);
+//Exanmple 2 (filtering strings  from an an array with numbers)
+let numbersStrings = [12,'Jlow', 1245,'Print'];
+let nonNumbers = strings.filter(str => str !== numbers);
+console.log(nonNumbers);
 // Adding items to an array
 let selectedJobs= ['Nurses','Mechanics','Accountants','Agronomist'];
 selectedJobs.push('Tailor');// Using(.push) to add an element
