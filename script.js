@@ -112,7 +112,7 @@ console.log(moringaCourses[2]);//To select a particular array
 console.log(moringaCourses.length);//To know the lenght of an array
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
-//Mapping arrays( .Map is used to crerate a new array by calling a provided function on every element in the original array.)
+//.Map() Mapping arrays(is used to crerate a new array by calling a provided function on every element in the original array.)
 // Example 1
 let numbers = [1,2,3,4,5,6]
 let squareNumbers = numbers.map(num=>num*num);
@@ -121,7 +121,29 @@ console.log(squareNumbers);
 const names = ['James', 'John','Alext','Antony'];
 const uppercasedNames = names.map(name=>name.toUpperCase());
 console.log(uppercasedNames);
-
+//.Find() Finding an element in an array( is used to retrive the first element from an array that meets a cetrain condition specified by a function)
+//Example 1(Finding the first number less than 50)
+const digits = [20,30,40,23,100];
+const found  = digits.find(digits=>digits<50);
+console.log(found);
+//Example 2 (Finding the first user in an array with the name Jane)
+const users = [
+    {id:1, username: "Jospaht"},
+    {id:2, username:"Jane"},
+    {id:3, username: "Albert"},
+    {id:4, username:"Benard"}
+];
+const user = users.find(user=>user.username === "Jane");
+console.log(user);
+//Example 3 (Finding a book by name Unplugged Aplpha by Richard Cooper)
+const books =[
+    {id:1,title:"Limitless",Author:"Jim Kwik"},
+    {id:2,title:"The Alchemist",Author:"Poule Cohelo"},
+    {id:3,title:"The Unplugged Alpha",Author:"Richard Cooper"},
+    {id:4,title:"The Rational Male",Author:"Rollo Tomassi"},
+];
+const findBookByTitle = title => books.find(book=> book.title === title);
+console.log(findBookByTitle('The Unplugged Alpha'));
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
 // To access an element in an array we use their index 
 // Adding items to an array
