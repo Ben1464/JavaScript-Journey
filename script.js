@@ -106,13 +106,21 @@ selectedMeals[2] = "Chapatis";
 selectedMeals.pop();// To remove the last element of the array.
 selectedMeals.shift();// To remove the first elemet of the array
 console.log(selectedMeals);
-let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI'];
-console.log(moringaCourses.slice(0,2));
+let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI','Data science'];
+console.log(moringaCourses.slice(0,3));//Used to retarn a shallow copy of the array
 console.log(moringaCourses[2]);//To select a particular array
 console.log(moringaCourses.length);//To know the lenght of an array
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
-//Mapping an array
+//Mapping arrays( .Map is used to crerate a new array by calling a provided function on every element in the original array.)
+// Example 1
+let numbers = [1,2,3,4,5,6]
+let squareNumbers = numbers.map(num=>num*num);
+console.log(squareNumbers);
+//Example 2
+const names = ['James', 'John','Alext','Antony'];
+const uppercasedNames = names.map(name=>name.toUpperCase());
+console.log(uppercasedNames);
 
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
 // To access an element in an array we use their index 
