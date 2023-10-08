@@ -169,10 +169,12 @@ players.forEach(player => {
 const strings  = ['Hello','','Man','','True'];
 const nonEmptyString =strings.filter(str => str !== "");
 console.log(nonEmptyString);
-//Exanmple 2 (filtering strings  from an an array with numbers)
-let numbersStrings = [12,'Jlow', 1245,'Print'];
-let nonNumbers = strings.filter(str => str !== numbers);
-console.log(nonNumbers);
+
+//Exanmple 2 (filtering strings shorter than 5 characters)
+const brands = ['Noki','Sumsang','Tecno','Infinix'];
+const longStrings = strings.filter(str=>str.length>=5);
+console.log(longStrings);
+
 // Adding items to an array
 let selectedJobs= ['Nurses','Mechanics','Accountants','Agronomist'];
 selectedJobs.push('Tailor');// Using(.push) to add an element
