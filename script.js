@@ -137,7 +137,7 @@ console.log(uppercasedNames);
 const digits = [20,30,40,23,100];
 const found  = digits.find(digits=>digits<50);
 console.log(found);
-//Example 2 (Finding the first user in an array with the name Jane)
+//Example 2 (Finding a user in an array with the name Jane)
 const users = [
     {id:1, username: "Jospaht"},
     {id:2, username:"Jane"},
@@ -278,7 +278,7 @@ let c =40;
     });
 //Higher Order Function.
 //HOF is a fuction that takes one or more fuctions as urguments and returns a fuction as a value for it.
-//Example 1
+//Example 1(END)
 function getCapture(camera){
     camera();
 }
