@@ -102,19 +102,28 @@ const employeesDetails={
 console.table(employeesDetails);
 //Arrays
 let selectedMeals = ['Pilau', 'Githeri', 'Beaf', 'Ugali'];//Example using strings
-selectedMeals[2] = "Chapatis";
+selectedMeals[2] = "Chapatis";//To select a particular item in the array we use bracket notation
 selectedMeals.pop();// To remove the last element of the array.
 selectedMeals.shift();// To remove the first elemet of the array
 console.log(selectedMeals);
 // Each element listed has an index i.e Pilau 0,Githeri 1 and Beaf 2.
 // To access an element in an array we use their index 
+// Adding items to an array
+let selectedJobs= ['Nurses','Mechanics','Accountants','Agronomist'];
+selectedJobs.push('Tailor');// Using(.push) to add an element
+selectedJobs.unshift('Security','Engineering');//using(.unshift) to add elements to the array
+console.log(selectedJobs);
+// Creating a copy of an array
+const registeredCompanies =['Apple','Microsoft','Windows'];
+const copyOfRegisteredCompanies =[...registeredCompanies ];
+console.log(registeredCompanies);
 let moringaCourses = ['Fullstack', 'DevOps', 'Cybersecurity', 'UX/UI','Data science'];
 console.log(moringaCourses.slice(0,3));//Used to retarn a shallow copy of the array
 console.log(moringaCourses[2]);//To select a particular array
 console.log(moringaCourses.length);//To know the lenght of an array
 let selectedHeights = [5.6, 5.9, 6];//Example using numbers
 console.log(selectedHeights);
-//.Map() Mapping arrays(is used to crerate a new array by calling a provided function on every element in the original array.)
+//.Map() Mapping arrays(is used to crate a new array by calling a provided function on every element in the original array.)
 // Example 1
 let numbers = [1,2,3,4,5,6]
 let squareNumbers = numbers.map(num=>num*num);
@@ -172,18 +181,8 @@ console.log(nonEmptyString);
 
 //Exanmple 2 (filtering strings shorter than 5 characters)
 const brands = ['Noki','Sumsang','Tecno','Infinix'];
-const longStrings = strings.filter(str=>str.length>=5);
+const longStrings = strings.filter(str=>str.length>6);
 console.log(longStrings);
-
-// Adding items to an array
-let selectedJobs= ['Nurses','Mechanics','Accountants','Agronomist'];
-selectedJobs.push('Tailor');// Using(.push) to add an element
-selectedJobs.unshift('Security','Engineering');//using(.unshift) to add elements to the array
-console.log(selectedJobs);
-// Creating a copy of an array
-const registeredCompanies =['Apple','Microsoft','Windows'];
-const copyOfRegisteredCompanies =[...registeredCompanies ];
-console.log(registeredCompanies);
 
 //(iii)Fuctions(theyre set of statements that performs a task or calculate a value)
 function greet(name) {//fuction declaration(with a singel parameter)(To perform a task)
