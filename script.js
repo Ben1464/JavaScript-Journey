@@ -440,13 +440,21 @@ console.log(kenyan);
 3!=="3"
 //Loops(loops repeat an action a number of times)
 //Example 1 (For loop)
-for (let i=0; i<5; i++){
+for (let i=3; i<8; i++){
     console.log("This should be repeated 5 times!",i);
 }
-//Example 2 (while loop)
+//Example 2
+const vegetables = ['Kales','Spinach','Managu','Malenge','Carrots'];
+for (let i=1; i< vegetables.length; i++) {
+    console.log(vegetables[i]);
+}
+//Example 3 (while loop)
 let i=1;//initialization
 while (i<=5){
     console.log("This also should be repeated 5 times!",i);
     i++;
 }
+
+//DOM(Document Object Model) (Used to manupulate the content,style and structure of a project)
+
 
