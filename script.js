@@ -456,5 +456,16 @@ while (i<=5){
 }
 
 //DOM(Document Object Model) (Used to manupulate the content,style and structure of a project)
+// 1. Method chaining(to select h1)
+//document.querySelector('h1');
+// Using chaining to delete an element(to delete h1)
+//document.querySelector('h1').remove();
+//Finding DOM nodes
 
+//1. getElementById(Gets elements by their ids)
+// Example 1
+//<div><h5 id="greeting">Hello!</h5></div>(we can select h5 by using; document.getElementById('greeting')
 
+// 2. getElementByClassName()(Gets elements by their class names)
+
+// 3. getElementsByTagName() (Gets elements by their tag names e.g h1,div,section)
