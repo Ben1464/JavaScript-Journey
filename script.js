@@ -469,3 +469,9 @@ while (i<=5){
 // 2. getElementByClassName()(Gets elements by their class names)
 
 // 3. getElementsByTagName() (Gets elements by their tag names e.g h1,div,section)
+// To remove an elelemnt or a tag from dom 
+// (elelemnt id,name,tag).remove()
+// To create a new element we use
+// const/let (Name of the element) = document.createElement(h1,div,etc) 
+//1. we add new elemnt id by ( newElement.id = "the name of the elemnt");
+// 2. To append it to the body we use (document.body.appendChild(name of the new element))
