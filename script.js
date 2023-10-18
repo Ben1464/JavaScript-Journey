@@ -184,16 +184,18 @@ const brands = ['Noki','Sumsang','Tecno','Infinix'];
 const longStrings = strings.filter(str=>str.length>6);
 console.log(longStrings);
 
+
 //(iii)Fuctions(theyre set of statements that performs a task or calculate a value)
 function greet(name) {//fuction declaration(with a singel parameter)(To perform a task)
     console.log('Hello' + name)
 }
 greet('Ben');
-//Declaring a function with expression
+//Declaring a function as an expression
 const studentDetails = function studentDetails(name,age,sex) {
     console.log('Hello' + name+''+ age+''+sex);
 }
 studentDetails('Robert',25,'male');
+
 //Rest Parameters(allows a function to accept any number of parameters)
 //A fuction can only accept only one rest parameter and it should be the last parameter"
 function collectThings(x,...y){
