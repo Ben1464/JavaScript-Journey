@@ -184,16 +184,18 @@ const brands = ['Noki','Sumsang','Tecno','Infinix'];
 const longStrings = strings.filter(str=>str.length>6);
 console.log(longStrings);
 
+
 //(iii)Fuctions(theyre set of statements that performs a task or calculate a value)
 function greet(name) {//fuction declaration(with a singel parameter)(To perform a task)
     console.log('Hello' + name)
 }
 greet('Ben');
-//Declaring a function with expression
+//Declaring a function as an expression
 const studentDetails = function studentDetails(name,age,sex) {
     console.log('Hello' + name+''+ age+''+sex);
 }
 studentDetails('Robert',25,'male');
+
 //Rest Parameters(allows a function to accept any number of parameters)
 //A fuction can only accept only one rest parameter and it should be the last parameter"
 function collectThings(x,...y){
@@ -456,5 +458,22 @@ while (i<=5){
 }
 
 //DOM(Document Object Model) (Used to manupulate the content,style and structure of a project)
+// 1. Method chaining(to select h1)
+//document.querySelector('h1');
+// Using chaining to delete an element(to delete h1)
+//document.querySelector('h1').remove();
+//Finding DOM nodes
 
+//1. getElementById(Gets elements by their ids)
+// Example 1
+//<div><h5 id="greeting">Hello!</h5></div>(we can select h5 by using; document.getElementById('greeting')
 
+// 2. getElementByClassName()(Gets elements by their class names)
+
+// 3. getElementsByTagName() (Gets elements by their tag names e.g h1,div,section)
+// To remove an elelemnt or a tag from dom 
+// (elelemnt id,name,tag).remove()
+// To create a new element we use
+// const/let (Name of the element) = document.createElement(h1,div,etc) 
+//1. we add new elemnt id by ( newElement.id = "the name of the elemnt");
+// 2. To append it to the body we use (document.body.appendChild(name of the new element))
