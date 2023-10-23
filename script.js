@@ -487,7 +487,9 @@ while (i <= 5) {
     i++;
 }
 
-//DOM(Document Object Model) (Used to manupulate the content,style and structure of a project)
+
+
+//DOM(Document Object Model) (Used to manupulate the content,style and structure of a project/website)
 // 1. Method chaining(to select h1)
 //document.querySelector('h1');
 // Using chaining to delete an element(to delete h1)
@@ -502,16 +504,15 @@ while (i <= 5) {
 
 // 3. getElementsByTagName() (Gets elements by their tag names e.g h1,div,section)
 // To remove an elelemnt or a tag from dom 
-// (elelemnt id,name,tag).remove()
+// (element id,name,tag).remove()
 // To create a new element we use
 // const/let (Name of the element) = document.createElement(h1,div,etc) 
-//1. we add new elemnt id by ( newElement.id = "the name of the elemnt");
 // 2. To append it to the body we use (document.body.appendChild(name of the new element))
 
 
 //Three pillars of web development
-//1. recognizing the event
-//2. manipulating the DOM 
+//1. Recognizing the event
+//2. Manipulating the DOM 
 //3. Communiating with the server
 
 // To add a new h1 tag
@@ -527,9 +528,11 @@ let divElement = document.createElement('div');
 divElement.innerHTML = 'man must go hard';
 divElement.textContent = 'Or he will have to go home';
 document.body.appendChild(divElement);
+
+
 // DOM events
 //adding dom events to an element
-//EXample 1
+//example 1
 const button = document.getElementById("btn");
 button.addEventListener("click", function () {
     alert("Button was clicked");
@@ -541,3 +544,14 @@ document.body.appendChild(pElement);
 pElement.addEventListener("click", function () {
     alert("someone clicked me");
 });
+//HTTP Request methods
+// 1. GET (The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.)
+// 2. POST (The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server. )
+// 3. HEAD (The HEAD method asks for a response identical to a GET request, but without the response body.)
+// 4. PUT(TDELETE
+// 5. DELETE (The DELETE method deletes the specified resource.)
+// 6. CONNECT (The CONNECT method establishes a tunnel to the server identified by the target resource.)
+// 7. PATCH (The PATCH method applies partial modifications to a resource.)
+
+
+//As Asynchronous fuctions 
