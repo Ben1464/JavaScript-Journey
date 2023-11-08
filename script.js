@@ -109,7 +109,7 @@ console.table(employeesDetails);
 
 //Arrays (gives a list of items)
 
-//Aray Methods(.push(),.unshift(),.pop(),.unshift(),.splice()).
+//Aray Methods(.push(),.unshift(),.pop(),.shift(),.splice()).
 
 
 let selectedMeals = ['Pilau', 'Githeri', 'Beaf', 'Ugali'];//Example using strings
@@ -174,7 +174,7 @@ const users = [
 ];
 const user = users.find(user => user.username === "Jane");
 console.log(user);
-//Example 3 (Finding a book by name Unplugged Aplpha by Richard Cooper)
+//Exawithmple 3 (Finding a book by name Unplugged Aplpha by Richard Cooper)
 const books = [
     { id: 1, title: "Limitless", Author: "Jim Kwik" },
     { id: 2, title: "The Alchemist", Author: "Poule Cohelo" },
@@ -491,9 +491,9 @@ while (i <= 5) {
 
 //DOM(Document Object Model) (Used to manupulate the content,style and structure of a project/website)
 // 1. Method chaining(to select h1)
-//document.querySelector('h1');
+document.querySelector('h1');
 // Using chaining to delete an element(to delete h1)
-//document.querySelector('h1').remove();
+document.querySelector('h1').remove();
 //Finding DOM nodes
 
 //1. getElementById(Gets elements by their ids)
@@ -506,7 +506,7 @@ while (i <= 5) {
 // To remove an elelemnt or a tag from dom 
 // (element id,name,tag).remove()
 // To create a new element we use
-// const/let (Name of the element) = document.createElement(h1,div,etc) 
+const (Name of the element) = document.createElement(h1,div,etc) 
 // 2. To append it to the body we use (document.body.appendChild(name of the new element))
 
 
