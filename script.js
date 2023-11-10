@@ -506,7 +506,7 @@ document.querySelector('h1').remove();
 // To remove an elelemnt or a tag from dom 
 // (element id,name,tag).remove()
 // To create a new element we use
-const (Name of the element) = document.createElement(h1,div,etc) 
+//const (Name of the element) = document.createElement(h1,div,etc) 
 // 2. To append it to the body we use (document.body.appendChild(name of the new element))
 
 
@@ -523,27 +523,36 @@ document.body.appendChild(h1);
 const h2 = document.createElement('h2')
 h2.textContent = 'its for trials';
 document.body.appendChild(h2);
+//Adding h3
+const h3 = document.createElement('h3');
+h3.textContent = 'What a h3 it is';
+document.body.appendChild(h3);
 //adding a div
 let divElement = document.createElement('div');
 divElement.innerHTML = 'man must go hard';
 divElement.textContent = 'Or he will have to go home';
 document.body.appendChild(divElement);
-
+//adding a section
+const section = document.createElement('section');
+section.innerHTML = 'Its a another section';
+document.body.appendChild(section);
 
 // DOM events
 //adding dom events to an element
 //example 1
 const button = document.getElementById("btn");
 button.addEventListener("click", function () {
-    alert("Button was clicked");
+    alert("The data have been submited");
 });
-// adding content to the p tag
+let p = document.createElement('p');
+p.textContent = "Its a paragraph nothing much";
+document.body.appendChild(p);
+//adding content to the p tag
 const pElement = document.querySelector("p");
 pElement.textContent = "How about us doing this for life";
 document.body.appendChild(pElement);
-pElement.addEventListener("click", function () {
-    alert("someone clicked me");
-});
+//pElement.addEventListener("click", function () 
+    //alert("someone clicked me");
 //HTTP Request methods
 // 1. GET (The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.)
 // 2. POST (The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server. )
